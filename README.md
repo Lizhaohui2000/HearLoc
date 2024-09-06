@@ -17,13 +17,11 @@ Our system is consisted of three main modules: array localization calibrator, IS
 
 Furthermore, we have investigated to modele more than one ECHO signal in a room for localization. More details can be found in our paper. 
 
-## File Structure:
+## File Structure
 
 * **Matlab codes**: "localize_one_ECHO.m" is for 2D/3D localization with the LOS and one ECHO signals. "localize_two_ECHO.m" is for localization with the LOS and two ECHO signals. "localize_multiple_sources.m" is for multiple sources localization. Fold "utils" involves the tools in signal processing. Requirement: Matlab 2021b. 
 * Folder "python implement" is the python code for sound source localization in real time. Requirements: Raspberry Pi 3B+, Seeed Respeaker 4-Mic ULA, Seeed Voice Card and its driver [2]. 
 * "samples.zip" is the audio sample for localization. You can download and unzip it in this folder. 
-
-
 
 If you have any questions, please feel free to contact my email lizhaohui@csu.edu.cn or leave an issue. 
 
