@@ -8,15 +8,15 @@ This is the code for our work "HearLoc: Locating Unknown Sources in 3D with a Sm
 
 Our approach leverages multipath propagation, typically viewed as a challenge, to enhance indoor localization precision. By effectively modeling the cross-correlations between multipath signals, we can construct a large virtual cross-wall array for localization. Specifically, for a uniform linear array (ULA) of diameter $D$, our model can expand it into a virtual 2D array of size $(2d_w, D)$, where $D$ is the array diameter and $d_w$ is the distance to the reflecting wall. Based on near-field localization theory [1], this method increases localization capability by a factor of $\frac{4d_w^2}{D^2}$. Consequently, both localization accuracy and dimensionality are significantly improved.
 
-
+## System Design
 
 Our system is consisted of three main modules: array localization calibrator, ISSL module (delay picker, GCC spectrum generator, and location selector), and iterative module for multiple sources. Our system workflow can be shown in:
 
- [!System Workflow of HearLoc](/resource/architecture.png, "System Workflow of HearLoc") 
+ ![System Workflow of HearLoc](/resource/architecture.png, "System Workflow of HearLoc") 
 
 Furthermore, we have investigate modeling more than one ECHO in a room for localization. More details can be found in our paper. 
 
-## File structure:
+## File Structure:
 
 * **Matlab codes**: "localize_one_ECHO.m" is for 2D/3D localization with the LOS and one ECHO signals. "localize_two_ECHO.m" is for localization with the LOS and two ECHO signals. "localize_multiple_sources.m" is for multiple sources localization. Fold "utils" involves the tools in signal processing. Requirement: Matlab 2021b. 
 * Folder "python implement" is the python code for sound source localization in real time. Requirements: Raspberry Pi 3B+, Seeed Respeaker 4-Mic ULA, Seeed Voice Card and its driver [2]. 
