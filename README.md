@@ -12,7 +12,7 @@ Our approach leverages multipath propagation, typically viewed as a challenge, t
 
 Our system is consisted of three main modules: array localization calibrator, ISSL module (delay picker, GCC spectrum generator, and location selector), and iterative module for multiple sources. Our system workflow can be shown in:
 
- ![System Workflow of HearLoc](/resource/architecture.png, "System Workflow of HearLoc") 
+![System Workflow of HearLoc](https://github.com/Lizhaohui2000/HearLoc/tree/main/resource)
 
 Furthermore, we have investigate modeling more than one ECHO in a room for localization. More details can be found in our paper. 
 
