@@ -1,14 +1,15 @@
 # HearLoc: Locating Unknown Sources in 3D with a Small-sized Microphone Array
 
+
 ## Abstract
 
-Indoor Sound Source Localization (ISSL) is under growing focus with the rapid development of smart IOT intelligence. Various scenarios benefit from this capability, including but not limited to: (I) A smart speaker can accurately identify illegal break-ins or elder falling according to the sound type and location. (II) A sweeping robot hears a command ``clean here" and can navigate to the exact location where the user stands for cleaning tasks. Compared with other localization technologies that use radio frequency or visual signals, localization directly by sound usually has advantages of less energy consumption, wider field-of-view and less privacy concerns.
+This is the code for our recent work **"HearLoc: Locating Unknown Sources in 3D with a Small-sized Microphone Array"**. We propose an indoor sound source localization system capable of accurately localizing multiple sound sources in both 2D and 3D using a single microphone array of just tens of centimeters, a feat previously considered difficult to achieve. Our system achieves a median error of $0.2m$ and $0.34m$ in 2D and 3D, respectively, under a latency of only $0.2s$. 
 
+## Background and motivation
 
-This is the code for our work "HearLoc: Locating Unknown Sources in 3D with a Small-sized Microphone Array". We propose an indoor sound source localization system capable of accurately localizing multiple sound sources in both 2D and 3D using a single microphone array of just tens of centimeters, a feat previously considered difficult to achieve. Our system achieves a median error of $0.2m$ and $0.34m$ in 2D and 3D, respectively, under a latency of only $0.2s$. 
+Indoor Sound Source Localization (ISSL) is under growing focus with the rapid development of smart IOT intelligence. Various scenarios benefit from this capability, including but not limited to: (I) A smart speaker can accurately identify illegal break-ins or elder falling according to the sound type and location. (II) A sweeping robot hears a command ``clean here" and can navigate to the exact location where the user stands for cleaning tasks. Compared with other localization technologies that use radio frequency or visual signals, localization directly by sound usually has advantages of **less energy consumption**, **wider field-of-view** and **less privacy concerns**. 
 
-
-Our approach leverages multipath propagation, typically viewed as a challenge, to enhance indoor localization precision. By effectively modeling the cross-correlations between multipath signals, we can construct a large virtual cross-wall array for localization. Specifically, for a uniform linear array (ULA) of diameter $D$, our model can expand it into a virtual 2D array of size $(2d_w, D)$, where $D$ is the array diameter and $d_w$ is the distance to the reflecting wall. Based on near-field localization theory [1], this method increases localization capability by a factor of $\frac{4d_w^2}{D^2}$. Consequently, both localization accuracy and dimensionality are significantly improved.
+Our approach leverages multipath propagation, typically viewed as a challenge, to enhance indoor localization precision. By effectively modeling the cross-correlations between multipath signals, we can construct a large virtual cross-wall array for localization. Specifically, for a small-sized uniform linear array (ULA) of diameter $D$, our model can expand it into a virtual 2D array of size $(2d_w, D)$, where $D$ is the array diameter and $d_w$ is the distance to the reflecting wall. Based on near-field localization theory [1], this method increases localization capability by a factor of $\frac{4d_w^2}{D^2}$. Consequently, both localization accuracy and dimensionality are significantly improved.
 
 ## System Design
 
