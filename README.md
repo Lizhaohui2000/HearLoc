@@ -3,7 +3,7 @@
 
 ## Abstract
 
-This is the code for our recent work **"HearLoc: Locating Unknown Sources in 3D with a Small-sized Microphone Array"**. Precisely determining the location of sound sources in 3D with a small-sized microphone array is usually considered difficult to achieve due to the constraint of far field effect. This work proposes to properly utilize the phenomenon of multipath propagation indoor, and builds a sound source localization system capable of localizing multiple sound sources in both 2D and 3D using a single microphone array of just tens of centimeters. Our system achieves a median error of $0.2m$ and $0.37m$ in 2D and 3D, respectively, under a latency of only $0.2s$. 
+This is the code for our recent work **"HearLoc: Locating Unknown Sources in 3D with a Small-sized Microphone Array"**. Precisely determining the location of sound sources in 3D with a small-sized microphone array is usually considered difficult to achieve due to the constraint of far field effect. This work proposes to properly utilize the phenomenon of indoor multipath propagation, and builds a sound source localization system capable of localizing multiple sound sources in both 2D and 3D using a single microphone array of just tens of centimeters. Our system achieves a median error of $0.2m$ and $0.37m$ in 2D and 3D, respectively, under a latency of only $0.2s$. 
 
 ## Background and motivation
 
