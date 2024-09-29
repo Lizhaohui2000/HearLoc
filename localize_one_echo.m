@@ -1,7 +1,6 @@
 clear; 
-addpath('.\utils\');%% large file processing. 
+addpath('.\utils\');
 
-Fs_org = 48000; 
 Fs = 48000; 
 d_w = 0.4;
 theta = 0;
@@ -116,3 +115,6 @@ end
 
 error_arr = vecnorm(P_ET_arr-P_GT_arr, 2, 2);
 median(error_arr)
+figure(); cdfplot(error_arr)
+xlabel('Error (m)')
+ylabel('Percentage')
