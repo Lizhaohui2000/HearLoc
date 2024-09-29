@@ -1,5 +1,5 @@
 clear; 
-addpath('E:\Academic documents\paper reading\SSL3D\codes\hotmapGeneration\timeEfficient\');%% large file processing. 
+addpath('.\utils\');%% large file processing. 
 
 Fs_org = 48000; 
 Fs = 48000; 
@@ -22,9 +22,9 @@ P_arr(:,3) = P_arr(:,3)-0.8;
 dim  =  3; %dim-3;
 
 if dim == 2
-    foldname = 'E:\Academic documents\paper reading\SSL3D\HearLoc\samples\one_wall_2D\';
+    foldname = '.\samples\one_wall_2D\';
 elseif dim == 3
-    foldname = 'E:\Academic documents\paper reading\SSL3D\HearLoc\samples\one_wall_3D\';
+    foldname = '.\samples\one_wall_3D\';
 end
 file_list = dir(fullfile(foldname, '*.txt'));
 data_amount = length(file_list);
