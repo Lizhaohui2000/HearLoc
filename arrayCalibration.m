@@ -8,7 +8,7 @@ D = (M-1)*d_a;
 d_w_max = 0.8;
 mrange = round(2*d_w_max/c*Fs+D/c*Fs+20);
 
-rootname = '.\arrayCalibration\';
+rootname = '.\samples\arrayCalibration\';
 
 %%%% load file
 filename = 'sound_4_0.3.txt'; %   a_50_3_8_s_69_24_8
