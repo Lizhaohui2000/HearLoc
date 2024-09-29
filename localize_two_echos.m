@@ -1,5 +1,5 @@
 clear; 
-addpath('E:\Academic documents\paper reading\SSL3D\codes\hotmapGeneration\timeEfficient\');%% large file processing. 
+addpath('.\utils\');
 
 Fs_org = 48000; 
 Fs = 48000; 
@@ -23,7 +23,7 @@ end
 P_arr(:,3) = P_arr(:,3)-0.8; 
 dim  =  2; %dim-3;
 
-foldname = 'E:\Academic documents\paper reading\SSL3D\codes\position_master\simulation database\dataset_2walls\';
+foldname = '.\samples\two_walls_2D\';
 file_list = dir(fullfile(foldname, '*.txt'));
 data_amount = length(file_list);
 
