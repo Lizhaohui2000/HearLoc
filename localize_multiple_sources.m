@@ -25,7 +25,7 @@ y_range = 0.5:mstep:roomdim(2);
 z_range = 0:mstep:max_H;
 
 %%%% load file
-sourceFolder = 'E:\Academic documents\paper reading\SSL3D\HearLoc\samples\multiple_sources_2D\';
+sourceFolder = '.\samples\multiple_sources_2D\';
 filename = 'source1_10_30_source2_65_30.txt';
 numbers = regexp(filename, '_\d+', 'match');
 numbers = strrep(numbers, '_', '');
